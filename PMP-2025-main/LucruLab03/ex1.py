@@ -83,4 +83,5 @@ prob_non_spam = result_classification.values[0]
 if prob_spam > prob_non_spam:
     print(f"\nDecizie: P(Spam)={prob_spam:.4f} > P(Non-Spam)={prob_non_spam:.4f}. Emailul este clasificat ca: SPAM (S=1).")
 else:
+
     print(f"\nDecizie: P(Spam)={prob_spam:.4f} < P(Non-Spam)={prob_non_spam:.4f}. Emailul este clasificat ca: NON-SPAM (S=0).")
