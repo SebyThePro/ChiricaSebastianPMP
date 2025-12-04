@@ -6,3 +6,4 @@ lab 5 1 facut |||
 lab 6 1 2 facute |||
 lab 7 facut |||
 lab 9 facut |||
+Lab 10 facut |||
