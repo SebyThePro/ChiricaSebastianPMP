@@ -1,0 +1,19 @@
+a) Estimarea coeficientilor (alpha si beta) Am definit un model liniar de forma: Vanzari = alpha + beta * Publicitate + eroare. 
+In urma rularii modelului PyMC, am obtinut mediile a posteriori pentru coeficienti.
+
+    alpha (intercept): Valoarea este in jur de 2.5. Aceasta reprezinta vanzarile de baza (in mii $) daca nu am cheltui nimic pe publicitate.
+
+    beta (panta): Valoarea este in jur de 1.77. Aceasta ne spune ca pentru fiecare 1000$ in plus cheltuiti pe publicitate, vanzarile cresc in medie cu 1770$.
+
+
+b) Intervale de credibilitate (HDI 95%) Intervalele HDI (Highest Density Interval) ne arata siguranta estimarii.
+
+    Pentru beta, intervalul 95% HDI nu include valoarea 0 (este in intregime pozitiv, aprox [1.6, 1.9]).
+    Acest lucru confirma cu o probabilitate de 95% ca exista o legatura semnificativa si pozitiva intre publicitate si vanzari. 
+    Investitia in reclama aduce profit.
+c) Predictii pentru venituri viitoare Folosind distributia predictiva a posteriori, 
+am generat estimari pentru noi nivele de cheltuieli.
+Modelul nu ne da doar o singura valoare prezisa, ci o distributie de valori posibile (afisata pe grafic ca o banda portocalie). 
+De exemplu, daca am extinde cheltuielile la 12.000$ (o valoare care nu a existat in datele initiale), modelul prezice ca vanzarile vor fi in jurul valorii de: Vanzari_est = 2.5 + 1.77 * 12 = 23.74 (mii $), cu o marja de eroare data de sigma. 
+Graficul final arata linia de regresie care trece prin centrul datelor, 
+iar banda HDI arata incertitudinea predictiei, care devine usor mai larga pe masura ce ne indepartam de datele cunoscute.
