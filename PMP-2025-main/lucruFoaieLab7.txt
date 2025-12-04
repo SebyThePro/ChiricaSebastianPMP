@@ -1,0 +1,19 @@
+a) Am definit un model probabilistic in PyMC. Deoarece nu avem informatii initiale, folosim o abordare "Empirical Bayes" simplificata pentru a centra prior-ul. Alegem x = 58, care este media esantionului observat. Prior-ul pentru medie este mu ~ N(58, 10^2). Deviatia standard de 10 este suficient de mare pentru a face prior-ul slab informativ, lasand datele sa influenteze rezultatul, dar centrarea ajuta la convergenta.
+
+b) In urma inferentei (sampling cu 2000 de iteratii), am obtinut:
+
+    Media a posteriori pentru mu este aproximativ 58.
+
+    Sigma a posteriori este aproximativ 2.2.
+
+    Intervalul 95% HDI pentru mu este aproximativ [56.6, 59.4].
+
+c) Estimarea Bayesiana (media ~58) este aproape identica cu media esantionului (estimarea frecventista, tot 58).Am folosit un prior slab (sigma=10). 
+Cand prior-ul este vag, 
+distributia a posteriori este dominata de likelihood, adica de datele observate. Astfel, rezultatul converge catre estimarea de maxima MLE.
+
+d) Folosind un prior puternic si gresit: mu ~ N(50, 1^2). 
+Noua medie a posteriori va fi in jur de 55-56 (valoare cuprinsa intre prior-ul de 50 si datele de 58). 
+Deoarece avem putine observatii (N=10), 
+datele nu au suficienta "forta" statistica pentru a corecta complet prior-ul foarte strict (sigma=1). 
+Rezultatul final este un compromis (o medie ponderata) intre estimarea initiala si datele reale. 
