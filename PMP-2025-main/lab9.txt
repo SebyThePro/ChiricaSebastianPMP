@@ -1,0 +1,48 @@
+b) Efectul lui Y si theta asupra distributiei a posteriori pentru n
+In urma rularii modelului pentru diferite combinatii de Y (numar de cumparatori observati) si theta (probabilitatea de cumparare), 
+observam urmatoarele:
+Influenta lui Y (Numarul de cumparatori): Exista o relatie directa intre Y si n. 
+Cand observam un numar mai mare de cumparatori (Y creste), 
+distributia a posteriori pentru n se deplaseaza spre dreapta (valori mai mari).
+Influenta lui theta (Probabilitatea de conversie): 
+Exista o relatie inversa intre theta si n.
+Pentru un theta mic (0.2): Modelul estimeaza valori mult mai mari pentru n. 
+Daca sansa de a cumpara e mica, dar totusi am avut vanzari, 
+inseamna ca trebuie sa fi intrat foarte multi oameni in magazin.
+Pentru un theta mare (0.5): Distributia lui n este concentrata pe valori mai mici, 
+mai apropiate de Y. 
+Daca sansa de a cumpara e mare, 
+nu e nevoie de multi vizitatori in plus fata de cei care au cumparat pentru a explica datele.
+
+d)Diferenta dintre distributia a posteriori (pentru n) si distributia predictiva a posteriori (pentru Y)
+Sigur, iată textul complet pentru Lab 8, punctele b) și d), scris fără diacritice, gata de a fi pus în fișierul README.md sau scris pe foaie.
+
+Ex. 1 - Explicatii si Interpretari
+
+b) Efectul lui Y si theta asupra distributiei a posteriori pentru n
+
+In urma rularii modelului pentru diferite combinatii de Y (numar de cumparatori observati) si theta (probabilitatea de cumparare), observam urmatoarele:
+
+    Influenta lui Y (Numarul de cumparatori): Exista o relatie directa intre Y si n. Cand observam un numar mai mare de cumparatori (Y creste), distributia a posteriori pentru n se deplaseaza spre dreapta (valori mai mari). Acest lucru este logic din doua motive:
+
+        Matematic, n trebuie sa fie cel putin egal cu Y (nu pot fi mai multi cumparatori decat vizitatori).
+
+        Probabilistic, daca au fost multe vanzari, este foarte probabil sa fi fost si multi vizitatori in magazin.
+
+    Influenta lui theta (Probabilitatea de conversie): Exista o relatie inversa intre theta si n.
+
+        Pentru un theta mic (0.2): Modelul estimeaza valori mult mai mari pentru n. Daca sansa de a cumpara e mica, dar totusi am avut vanzari, inseamna ca trebuie sa fi intrat foarte multi oameni in magazin.
+
+        Pentru un theta mare (0.5): Distributia lui n este concentrata pe valori mai mici, mai apropiate de Y. Daca sansa de a cumpara e mare, nu e nevoie de multi vizitatori in plus fata de cei care au cumparat pentru a explica datele.
+
+d) Diferenta dintre distributia a posteriori (pentru n) si distributia predictiva a posteriori (pentru Y)*
+
+Desi ambele distributii se bazeaza pe datele observate, ele reprezinta lucruri diferite:
+
+    Distributia a posteriori pentru n reprezinta incertitudinea noastra cu privire la parametrul necunoscut: 
+"Cati oameni au intrat in magazin astazi?". Ea ne arata care sunt cele mai probabile valori pentru n, dat fiind ce am observat.
+
+    Distributia predictiva a posteriori reprezinta estimarea pentru o situatie viitoare: "Cati oameni ne asteptam sa cumpere maine (Y*)?".
+
+
+Predictia este mai nesigura decat estimarea parametrului, acoperind o zona mai larga de valori posibile.
