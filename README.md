@@ -8,3 +8,4 @@ lab 7 facut |||
 lab 9 facut |||
 Lab 10 facut |||
 Lab 11 facut |||
+Lab 12 facut |||
