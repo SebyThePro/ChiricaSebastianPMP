@@ -1,11 +1,11 @@
-lab 1 facut|||
-lab 2 1 tot facut, 2 a)b) facute|||
-lab 3 1,2,3 facute |||
-lab 4 1,2 facute |||
-lab 5 1 facut |||
-lab 6 1 2 facute |||
-lab 7 facut |||
-lab 9 facut |||
-Lab 10 facut |||
-Lab 11 facut |||
-Lab 12 facut |||
+sapt 1 facut|||
+sapt 2 1 tot facut, 2 a)b) facute|||
+sapt 3 1,2,3 facute |||
+sapt 4 1,2 facute |||
+sapt 5 1 facut |||
+sapt 6 1 2 facute |||
+sapt 7 facut |||
+sapt 9 facut |||
+sapt 10 facut |||
+sapt 11 facut |||
+sapt 12 facut |||
